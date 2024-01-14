@@ -20,6 +20,7 @@ function App() {
       .then((result) => {
         setWeather(result);
       });
+      setSearch("");
   };
 
   return (
@@ -35,6 +36,7 @@ function App() {
             placeholder="Enter city/town..."
             onChange={(e) => setSearch(e.target.value)}
             className="search"
+            value={search}
           />
         </form>
 
